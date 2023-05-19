@@ -1,0 +1,8 @@
+db.user.aggregate([
+    {
+        $group: {
+            _id: "$favorites.movie",
+            avgAge: { $avg: "$age" }
+        }
+    }
+])

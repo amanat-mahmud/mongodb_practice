@@ -2,3 +2,9 @@ db.user.aggregate([
     {$match: {email:"johndoe@example.com"}},
     { $set: { "address.zipcode": "10002" } }
 ])
+
+//Another way of updating
+db.user.updateOne(
+    { email: "johndoe@example.com" },
+    { $set: { "address.zipcode": "10002" } }
+)
