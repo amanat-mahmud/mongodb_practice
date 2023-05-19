@@ -1,0 +1,4 @@
+db.user.aggregate([
+    {$match: {email:"johndoe@example.com"}},
+    { $set: { "address.zipcode": "10002" } }
+])
