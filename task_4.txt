@@ -1,0 +1,6 @@
+db.user.find({
+    $and: [
+        {"favorites.color":"green"},
+        {age:{$gt: 30}}
+    ]
+})
