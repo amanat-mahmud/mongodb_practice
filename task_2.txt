@@ -1,0 +1,1 @@
+db.user.find({ email: "johndoe@example.com" }).project({ "favorites.movie": 1 })
