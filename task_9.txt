@@ -1,0 +1,9 @@
+db.user.aggregate([
+    { $match: { "favorites.food": "pizza" } },
+    {
+        $group: {
+            _id: null,
+            averageAge: { $avg: "$age" }
+        }
+    },
+])
