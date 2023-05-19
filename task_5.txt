@@ -1,0 +1,5 @@
+db.user.aggregate([
+    {$match: {"favorites.movie":"The Shawshank Redemption"}},
+    {$count: "Shawshank_lover_count"}
+
+])
