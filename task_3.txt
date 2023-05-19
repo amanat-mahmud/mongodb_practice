@@ -1,0 +1,2 @@
+db.user.find({"favorites.food": "pizza"}).sort({ age:1 })
+//.project({age:1})
