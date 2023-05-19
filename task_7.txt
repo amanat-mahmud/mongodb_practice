@@ -1,0 +1,31 @@
+//This data got deleted
+{
+	"_id" : ObjectId("6466ea508cac8c6cecf98869"),
+	"name" : "Alice Williams",
+	"email" : "alicewilliams@example.com",
+	"age" : 35,
+	"address" : {
+		"street" : "456 Elm St",
+		"city" : "San Francisco",
+		"state" : "CA",
+		"zipcode" : "94101"
+	},
+	"favorites" : {
+		"color" : "green",
+		"food" : "sushi",
+		"movie" : "The Godfather"
+	},
+	"friends" : [
+		{
+			"name" : "Bob Anderson",
+			"email" : "bobanderson@example.com"
+		},
+		{
+			"name" : "Emily Davis",
+			"email" : "emilydavis@example.com"
+		}
+	]
+},
+
+
+db.user.deleteOne({email:"alicewilliams@example.com"})
